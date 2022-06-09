@@ -68,19 +68,6 @@ const Upload = () => {
     setIsLoading(false);
   };
   return (
-    // <Box
-    //   sx={{
-    //     display: "flex",
-    //     alignItems: "center",
-    //     flexWrap: "wrap",
-    //     justifyContent: "center",
-    //     gap: "30px",
-    //     flexDirection:"column",
-    //     flexFlow
-
-    //   }}
-    // >
-
     <div
       style={{
         display: "flex",
@@ -105,7 +92,7 @@ const Upload = () => {
         <ToggleButton value="csv2json">Csv2json</ToggleButton>
       </ToggleButtonGroup>
 
-      <input type="file" onChange={onFileChanged} title={"strig"}/>
+      <input type="file" onChange={onFileChanged} title={"File upload selector"}/>
       <Button variant="contained" onClick={onFileUpload}>
         Convert
       </Button>
